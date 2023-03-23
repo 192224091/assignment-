@@ -1,0 +1,10 @@
+def find_first_occurrence(arr, X):
+    index = -1
+    for i in range(len(arr)):
+        if arr[i] == X:
+            index = i
+            break
+    if index == -1:
+        print("-1")
+    else:
+        print(index)
