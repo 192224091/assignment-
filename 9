@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    char c;
+    int freq = 0;
+
+    printf("Enter a string: ");
+    fgets(str, 100, stdin);
+
+    printf("Enter the character to find the frequency: ");
+    scanf("%c", &c);
+
+    for (int i = 0; i < strlen(str); i++) {
+        if (str[i] == c) {
+            freq++;
+        }
+    }
+
+    printf("The frequency of '%c' in '%s' is %d\n", c, str, freq);
+
+    return 0;
+}
+Out putEnter a string: this is a string
+Enter the character to find the frequency: s
+The frequency of 's' in 'this is a string
+' is 3
