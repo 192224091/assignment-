@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char source[100], destination[100];
+    int length;
+
+    printf("Enter a string: ");
+    scanf("%s", source);
+
+    length = strlen(source);
+
+    // Copy the string from source to destination
+    strcpy(destination, source);
+
+    printf("The copied string is: %s\n", destination);
+    printf("The length of the string is: %d\n", length);
+
+    return 0;
+}
+Out putInput the string : Welcome to w3resource.com
+Number of Alphabets in the string is : 21
+Number of Digits in the string is : 1
+Number of Special characters in the string is : 4
